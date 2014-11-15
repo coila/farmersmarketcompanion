@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+    <!-- <div class="alert alert-danger alert-dismissible" ></div> -->
+    {% if latest_poll_list %}
+        <ul>
+            {% for poll in latest_poll_list %}
+                <li><a href="#">{{poll.question}}</a></li>
+            {% endfor %}
+        </ul>
+
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
+
+    <!-- <select class="selectpicker" data-style="btn-info" data-width="60px"></select> -->
+
+    <form action = "polls/search" method="get" id="post-form">
+        <input id="zipcode" type="text" class="form-control" placeholder="Text input">
+        <input type="hidden" name="statecode" id="statecode">
+        <input type="submit" value="Vote" />
+    </form>
+
+    <button id="test_button">Click!</button>
+
+    <div id="results">
+        <p>
+            {% for result in message %}
+                <p> test </p>
+            {% endfor %}
+        </p>
+    </div>
+
+    <table class= 'table markets'>
+        <tr>
+            <td>Distance</td>
+            <td>Stuff </td>
+        </tr>
+    </table>
+
+{% endblock %}
