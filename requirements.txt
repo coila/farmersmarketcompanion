@@ -1,0 +1,15 @@
+Django==1.5.4
+MySQL-python==1.2.5
+PyYAML==3.11
+argparse==1.2.1
+boto==2.34.0
+dj-database-url==0.3.0
+dj-static==0.0.6
+django-storages==1.1.8
+django-toolbelt==0.0.1
+gunicorn==19.1.1
+psycopg2==2.5.4
+py-mysql2pgsql==0.1.5
+static3==0.5.1
+termcolor==1.1.0
+wsgiref==0.1.2
